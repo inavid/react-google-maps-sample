@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uso de google maps en react con el paquete https://tomchentw.github.io/react-google-maps/#infowindow
 
-## Available Scripts
+"/"  --> Marker with label
+"/drawing" --> Map with drawing tool
+"/circle" --> Map with a circle drawed
+"/routes" --> Map with a route drawed
+"/polygon" --> Map with a polygon drawed
+"/overlay" --> Map with a modal and a button to interact inside of a map
+"/infobox" --> Map with a infobox showing a message (no interaction)
 
-In the project directory, you can run:
+En estas rutas se puede observar diferentes ejemplos, en el caso de la herramienta de dibujo se puede tambien obtener las coordenadas, centro, radio, path etc... 
 
-### `npm start`
+Con los datos que se obtienen de dichos ejemplos se puede pintar posteriormente en el mapa a partir de ellos... esto es lo que requerimos para las geocercas...
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Description
+This small project works as a test to show some google maps API functionalities through react components thanks to the library 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+https://tomchentw.github.io/react-google-maps/
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to install
 
-### `npm run build`
+Remember to change your envexample and nowexample files to .env and now.json, inside those files you need to put a google maps key to work correctly with their API...
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This repository have a now file so, if you have configured and installed NOW cli you can only run 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+´´´shell
+npm install && now
+´´´
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you don't have now but you have nvm then you can do:
 
-### `npm run eject`
+´´´shell
+nvm install && nvm use && npm start
+´´´
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+And if you're still on a cave and you don't have nothing?, well... in that case I will recommend you to install any of the previous one or install node on at least 10.12 version to be able to run npm install and after that npm start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### How it works? 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Once it is deployed you should get into the home view, in that home view you can see the index with all the components that are available in this demo...
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Thanks! =)

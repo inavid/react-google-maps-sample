@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "name": "maps-react-sample",
+  "build": {
+    "env": {
+      "REACT_APP_ENV": "development",
+      "REACT_APP_GOOGLE_MAPS_KEY": "XXXXXXXXXXXXXX"
+    }
+  },
+  "builds": [
+    {
+      "use": "@now/static-build",
+      "src": "package.json",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [
+    {"src": "^/static/(.*)", "dest": "/static/$1"},
+    {"src": "^/favicon.ico", "dest": "/favicon.ico"},
+    {"src": "^/manifest.json", "dest": "/manifest.json"},
+    {"src": "^/(.*)", "dest": "/index.html"}
+  ]
+}
